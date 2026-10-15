@@ -1,46 +1,151 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy | The Actual Takeaway</title><meta name="description" content="How The Actual Takeaway publishing tool accesses, uses, stores and shares Google user data."><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><header><a class="brand" href="index.html">The Actual <span>Takeaway</span></a><nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
-<main>
-<h1>Privacy Policy</h1>
-<p class="meta">Effective October 5, 2026</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Faceless Channel Automation</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --accent: #2a5bd7;
+      --border: #e3e3e3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --fg: #f0f0f0;
+        --muted: #b5b5b5;
+        --accent: #7aa2ff;
+        --border: #333;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    h1 { font-size: 1.7rem; margin-bottom: 4px; }
+    .updated { color: var(--muted); font-size: 0.92rem; margin-top: 0; margin-bottom: 32px; }
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 2026 &middot; Applies to: Faceless Channel Automation</p>
 
-<p>This policy explains how "The Actual Takeaway" publishing tool (the "App") handles information, including data received from Google APIs. The App is a private automation tool operated by the owner of The Actual Takeaway YouTube channel for managing that channel. It is not offered to the public.</p>
+    <p>
+      This privacy policy explains what data <strong>Faceless Channel Automation</strong> ("the app")
+      accesses, how it is used, and how it is protected. The app is a personal automation tool built
+      and operated solely by me, Andre Al Thubian, to run my own YouTube channel. It is not distributed
+      to, or used by, any other person.
+    </p>
 
-<h2>Who uses the App</h2>
-<p>The only person who signs in to the App with Google is the channel owner. The App does not collect data from viewers, visitors to this website, or any other Google users.</p>
+    <h2>Who operates this app</h2>
+    <p>
+      Andre Al Thubian (sole operator and sole user). Contact:
+      <a href="mailto:andre.althubian@gmail.com">andre.althubian@gmail.com</a>.
+    </p>
 
-<h2>Google user data the App accesses</h2>
-<p>With the owner's permission, the App accesses only the following data in the owner's own Google account:</p>
-<ul>
-<li><strong>YouTube Data API and YouTube Analytics API:</strong> the ability to upload videos and set thumbnails on the owner's channel, and read-only access to the channel's own video metadata, statistics and analytics (such as views and audience retention).</li>
-<li><strong>Google Sheets API:</strong> read and write access to the owner's spreadsheets used for planning and logging uploads.</li>
-<li><strong>Google Drive API:</strong> the ability to create, store and share files (such as voiceover audio) in the owner's Drive.</li>
-</ul>
+    <h2>What data the app accesses</h2>
+    <ul>
+      <li>
+        <strong>Google Sheets data:</strong> the app reads and writes to a single Google Sheet that I
+        own, which contains video topics, generated scripts, render status, and links to published
+        videos. This sheet is not shared with or accessible by anyone besides me.
+      </li>
+      <li>
+        <strong>YouTube channel data:</strong> the app uses the YouTube Data API, authenticated as my
+        own Google account, to upload finished videos, set video titles/descriptions/tags, and set
+        video thumbnails on my own YouTube channel. It does not read, modify, or access any other
+        YouTube channel, and it does not access viewer, subscriber, or analytics data beyond what is
+        needed to confirm an upload succeeded.
+      </li>
+    </ul>
 
-<h2>How the data is used</h2>
-<p>This data is used only to provide the App's features to the owner: publishing the owner's videos, recording what was published, and producing performance reports for the owner. The data is not used for advertising, is not sold, and is not used to build profiles of anyone.</p>
+    <h2>What data the app does <em>not</em> collect</h2>
+    <p>
+      The app does not collect data from, or about, any third party. It does not have end users other
+      than me, does not serve a public sign-up flow, does not collect visitor analytics on this
+      website, and does not use cookies, tracking pixels, or advertising identifiers.
+    </p>
 
-<h2>How the data is stored</h2>
-<p>OAuth access tokens are stored encrypted in the owner's self-hosted automation server. Channel statistics and logs are stored in the owner's own Google Sheets and Drive. No Google user data is stored in any other database.</p>
+    <h2>How the data is used</h2>
+    <p>
+      Data read from the Google Sheet (topics and scripts) is sent to third-party services I use to
+      generate scripts, synthesize voiceover, source stock footage, and render video files, purely as
+      part of producing a finished video. The resulting video file is then uploaded to my own YouTube
+      channel. Status information (render status, the resulting YouTube video link, timestamps) is
+      written back to the same Google Sheet so I can track what has been published. No data collected
+      or generated by this process is sold, rented, or shared with advertisers or any other third
+      party for any purpose unrelated to producing and publishing these videos.
+    </p>
 
-<h2>Sharing</h2>
-<p>Google user data is not shared with, transferred to, or sold to any third party. The App uses outside services to produce video content (text and image generation, text-to-speech, stock footage and video rendering), but those services receive only content the owner creates, not data obtained from the owner's Google account.</p>
+    <h2>Data retention</h2>
+    <p>
+      Sheet data and rendered video metadata are retained indefinitely in my own Google Sheet and
+      YouTube account for my own record-keeping, and can be deleted by me at any time. Intermediate
+      files used during video production (such as temporary render files) are not retained longer
+      than needed to complete the upload.
+    </p>
 
-<h2>Google API Services User Data Policy</h2>
-<p>The App's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <h2>Third-party services involved in production</h2>
+    <p>
+      Producing each video involves passing script text and related metadata to third-party APIs for
+      AI text generation, text-to-speech, stock footage search, and video rendering, strictly to
+      produce the video. Each of these services is used under its own terms and privacy policy, and
+      none of them are provided with any personal data beyond what's required to generate that
+      specific video's content.
+    </p>
 
-<h2>YouTube API Services</h2>
-<p>The App uses YouTube API Services. By using the App you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> applies to data handled by YouTube and Google.</p>
+    <h2>Google API Services User Data Policy</h2>
+    <p>
+      This app's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+        Google API Services User Data Policy</a>, including the Limited Use requirements.
+    </p>
 
-<h2>Retention and deletion</h2>
-<p>Data is kept only as long as the owner needs it to run the channel. The owner can revoke the App's access at any time from the <a href="https://myaccount.google.com/permissions">Google security settings page</a>, which stops all further access. Stored tokens are then deleted from the automation server, and logs can be deleted by deleting the related spreadsheets. To ask about or request deletion of any data, email the contact address below.</p>
+    <h2>Changes to this policy</h2>
+    <p>
+      If what this app accesses or how it uses that access changes, this page will be updated
+      accordingly, and the "Last updated" date above will reflect the most recent revision.
+    </p>
 
-<h2>Cookies</h2>
-<p>This website does not use cookies or tracking.</p>
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or the app can be sent to
+      <a href="mailto:andre.althubian@gmail.com">andre.althubian@gmail.com</a>.
+    </p>
 
-<h2>Changes</h2>
-<p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
-
-<h2>Contact</h2>
-<p><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
-</main>
-<footer><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><p>&copy; 2026 The Actual Takeaway. Contact: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p></footer></div></body></html>
+    <footer>
+      <p><a href="index.html">&larr; Back to Faceless Channel Automation</a></p>
+    </footer>
+  </div>
+</body>
+</html>
